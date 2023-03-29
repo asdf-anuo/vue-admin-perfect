@@ -38,7 +38,7 @@ const echartsRouter = [
         path: '/echarts/pie',
         component: () => import('@/views/echarts/pieEcharts/index.vue'),
         name: 'pie',
-        meta: { title: '饼图', roles: ['other'], icon: 'MenuIcon' },
+        meta: { title: '扇形饼图', roles: ['other'], icon: 'MenuIcon' },
       },
       {
         path: '/echarts/simple',
