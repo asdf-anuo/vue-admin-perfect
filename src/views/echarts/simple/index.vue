@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <PageWrapLayout style="width: 100%">
     <el-row class="row-bg" :gutter="10">
@@ -19,7 +20,7 @@
             </div>
           </template>
           <bar-charts height="200px" width="100%" id="bar" /> </el-card
-        ></el-col>
+      ></el-col>
       <el-col :xs="24" :sm="12" :lg="8">
         <el-card class="box-card">
           <template #header>
@@ -95,34 +96,34 @@
   </PageWrapLayout>
 </template>
 <script setup lang="ts">
-import LineCharts from './components/line.vue'
-import BarCharts from './components/bar.vue'
-import PieCharts from './components/pie.vue'
-import ScatterCharts from './components/scatter.vue'
-import GaugeCharts from './components/gauge.vue'
-import FunnelCharts from './components/funnel.vue'
-import CandlestickCharts from './components/candlestick.vue'
-import GraphCharts from './components/graph.vue'
-import PictorialBar from './components/pictorialBar.vue'
+  import LineCharts from './components/line.vue'
+  import BarCharts from './components/bar.vue'
+  import PieCharts from './components/pie.vue'
+  import ScatterCharts from './components/scatter.vue'
+  import GaugeCharts from './components/gauge.vue'
+  import FunnelCharts from './components/funnel.vue'
+  import CandlestickCharts from './components/candlestick.vue'
+  import GraphCharts from './components/graph.vue'
+  import PictorialBar from './components/pictorialBar.vue'
 </script>
 
 <style>
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.text {
-  font-size: 14px;
-}
+  .text {
+    font-size: 14px;
+  }
 
-.item {
-  margin-bottom: 18px;
-}
+  .item {
+    margin-bottom: 18px;
+  }
 
-.box-card {
-  margin-bottom: 10px;
-  width: 100%;
-}
+  .box-card {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 </style>
