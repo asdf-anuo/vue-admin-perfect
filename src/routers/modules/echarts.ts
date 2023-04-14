@@ -46,6 +46,12 @@ const echartsRouter = [
         name: 'echarts-simple',
         meta: { title: '简单图表', roles: ['other'], icon: 'MenuIcon' },
       },
+      {
+        path: '/echarts/bigScreenHealth',
+        component: () => import('@/views/echarts/HealthBigDataPlatform/index.vue'),
+        name: 'bigScreenHealth',
+        meta: { title: '健康大数据综合分析', roles: ['other'], icon: 'MenuIcon' },
+      },
     ],
   },
 ]
