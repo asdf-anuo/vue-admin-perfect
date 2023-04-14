@@ -94,6 +94,7 @@
       </el-col>
     </el-row>
   </PageWrapLayout>
+  <WaterPrint />
 </template>
 <script setup lang="ts">
   import LineCharts from './components/line.vue'

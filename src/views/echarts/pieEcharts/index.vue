@@ -1,36 +1,19 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="app-container">
-    <div class="mark-wrap">
-      <div class="water-mark mark1">{{ waterTxt }}</div>
-      <div class="water-mark mark2">{{ waterTxt }}</div>
-      <div class="water-mark mark3">{{ waterTxt }}</div>
-      <div class="water-mark mark4">{{ waterTxt }}</div>
-      <div class="water-mark mark5">{{ waterTxt }}</div>
-    </div>
-    <div class="mark-wrap">
-      <div class="water-mark mark6">{{ waterTxt }}</div>
-      <div class="water-mark mark7">{{ waterTxt }}</div>
-      <div class="water-mark mark8">{{ waterTxt }}</div>
-      <div class="water-mark mark9">{{ waterTxt }}</div>
-      <div class="water-mark mark10">{{ waterTxt }}</div>
-    </div>
-    <div ref="chartsRef" class="app-echarts"></div>
-  </div>
+  <div ref="chartsRef" class="app-echarts"></div>
+  <WaterPrint />
 </template>
 
 <script lang="ts" setup>
   import { ref, onMounted } from 'vue'
   import { useResizeElement } from '@/hooks/useResizeElement'
   import * as echarts from 'echarts'
-  const waterTxt = 'leichaohai8864'
   const chartsRef = ref<HTMLElement | null>()
-
   // const backgroundColor = '#0a0a2e'
   const title = {
     text: '网络/安全设备概览',
     textStyle: {
-      color: '#fff',
+      color: '#000',
       fontSize: 16,
     },
     padding: 0,
@@ -123,65 +106,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .app-container {
-    position: relative;
-  }
-  .mark-wrap {
-    display: flex;
-    flex-direction: row;
-  }
-  .water-mark {
-    position: absolute;
-    cursor: not-allowed;
-    font-size: 24px;
-    font-family: 'MicrosoftYaHei';
-    color: #ccc;
-    font-weight: bold;
-    z-index: 1;
-    transform: rotate(-20deg);
-    letter-spacing: 5px;
-    z-index: 2;
-  }
-  .mark1 {
-    left: 5%;
-    top: 20%;
-  }
-  .mark2 {
-    left: 25%;
-    top: 20%;
-  }
-  .mark3 {
-    left: 45%;
-    top: 20%;
-  }
-  .mark4 {
-    left: 65%;
-    top: 20%;
-  }
-  .mark5 {
-    left: 85%;
-    top: 20%;
-  }
-  .mark6 {
-    left: 5%;
-    top: 50%;
-  }
-  .mark7 {
-    left: 25%;
-    top: 50%;
-  }
-  .mark8 {
-    left: 45%;
-    top: 50%;
-  }
-  .mark9 {
-    left: 65%;
-    top: 50%;
-  }
-  .mark10 {
-    left: 85%;
-    top: 50%;
-  }
   .app-echarts {
     width: 100%;
     height: 100%;

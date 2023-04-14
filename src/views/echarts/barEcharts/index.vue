@@ -2,6 +2,7 @@
 <template>
   <div class="app-container">
     <div ref="chartsRef" class="app-echarts"></div>
+    <WaterPrint />
   </div>
 </template>
 
